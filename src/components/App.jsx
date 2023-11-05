@@ -1,17 +1,17 @@
-export const App = () => {
-  return (
-    <div
-      style={{
-        height: '100vh',
-        display: 'flex',
-        justifyContent: 'center',
-        alignItems: 'center',
-        fontSize: 40,
-        color: '#010101'
-      }}
-    >
-      <h1>Phonebook</h1>
-      <h2></h2>
-    </div>
-  );
+import React, { Component } from 'react';
+
+export class App extends Component {
+  state = {
+    contacts: [],
+    filter: '',
+  };
+  render () {
+    return(
+      <div>
+        <h1>Phonebook</h1>
+        <h2>Contacts</h2>
+      </div>
+    )
+  };
+
 };
